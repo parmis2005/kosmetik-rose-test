@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   const [visible, setVisible] = useState(false);
+  const [videoFailed, setVideoFailed] = useState(false);
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 100);
@@ -14,14 +15,34 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
-      <div
-        className="hero-moving-background absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/galerie/frauen/header.jpg')" }}
-      />
-      <div
-        className="hero-moving-background hero-moving-background--delayed absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45"
-        style={{ backgroundImage: "url('/images/services/micro-needling.jpg')" }}
-      />
+      {!videoFailed && (
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/galerie/frauen/header.jpg"
+          aria-hidden="true"
+          onError={() => setVideoFailed(true)}
+        >
+          <source src="/videos/hero-background.mp4" type="video/mp4" />
+        </video>
+      )}
+
+      {videoFailed && (
+        <>
+          <div
+            className="hero-moving-background absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/galerie/frauen/header.jpg')" }}
+          />
+          <div
+            className="hero-moving-background hero-moving-background--delayed absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45"
+            style={{ backgroundImage: "url('/images/services/micro-needling.jpg')" }}
+          />
+        </>
+      )}
 
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/65 via-charcoal/45 to-charcoal/75" />
       <div className="absolute inset-0 bg-gradient-to-br from-rose/10 via-transparent to-charcoal/20" />
