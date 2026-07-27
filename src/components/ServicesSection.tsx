@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 type PriceRow = { label: string; price: string };
 type PriceGroup = { group?: string; rows: PriceRow[] };
@@ -291,9 +292,9 @@ export default function ServicesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <a href="#kontakt" className="btn-primary">
+          <Link href="/#termin-buchen" className="btn-primary">
             Behandlung reservieren
-          </a>
+          </Link>
         </div>
       </div>
     </section>

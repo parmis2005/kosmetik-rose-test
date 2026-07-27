@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTABanner() {
   return (
     <section id="termin" className="relative py-24 px-6 overflow-hidden">
@@ -21,9 +23,9 @@ export default function CTABanner() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+492311387800" className="btn-primary">
-            Jetzt anrufen
-          </a>
+          <Link href="/#termin-buchen" className="btn-primary">
+            Jetzt online buchen
+          </Link>
           <a href="mailto:info@kosmetik-rose.de" className="btn-outline">
             Termin per E-Mail anfragen
           </a>

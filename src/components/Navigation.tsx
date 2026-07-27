@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
+  { href: "/#termin-buchen", label: "Termin Buchen" },
   { href: "/#leistungen", label: "Leistungen" },
   { href: "/#ueber-uns", label: "Über Uns" },
   { href: "/#galerie", label: "Galerie" },
@@ -51,7 +52,7 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className={`text-xs font-body tracking-[2px] uppercase transition-colors hover:text-rose ${
@@ -59,11 +60,11 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
               }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a href="tel:+492311387800" className="btn-primary text-xs">
+          <Link href="/#termin-buchen" className="btn-primary text-xs">
             Termin buchen
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -83,22 +84,22 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-8 px-6">
           <nav className="flex flex-col gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
                 className="text-xs tracking-[2px] uppercase text-charcoal-light hover:text-rose transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="tel:+492311387800"
+            <Link
+              href="/#termin-buchen"
               onClick={() => setMenuOpen(false)}
               className="btn-primary text-center text-xs mt-2"
             >
               Termin buchen
-            </a>
+            </Link>
             <div className="flex items-center gap-2 text-charcoal-light pt-2 border-t border-gray-100">
               <Phone size={14} className="text-rose" />
               <a href="tel:+492311387800" className="text-sm hover:text-rose transition-colors">

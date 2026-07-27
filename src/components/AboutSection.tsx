@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <section id="ueber-uns" className="bg-cream py-24 px-6 overflow-hidden">
@@ -60,9 +62,9 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <a href="#kontakt" className="btn-primary">
+          <Link href="/#termin-buchen" className="btn-primary">
             Termin anfragen
-          </a>
+          </Link>
         </div>
       </div>
     </section>

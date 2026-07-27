@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -61,9 +62,9 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <a href="tel:+492311387800" className="btn-primary">
-            Termin buchen
-          </a>
+          <Link href="/#termin-buchen" className="btn-primary">
+            Online Termin buchen
+          </Link>
           <a href="#leistungen" className="btn-outline">
             Unsere Leistungen
           </a>
