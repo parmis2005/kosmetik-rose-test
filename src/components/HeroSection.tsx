@@ -23,7 +23,7 @@ export default function HeroSection() {
           loop
           playsInline
           preload="metadata"
-          poster="/images/galerie/frauen/header.jpg"
+          poster="/images/galerie/frauen/hero-poster.jpg"
           aria-hidden="true"
           onError={() => setVideoFailed(true)}
         >
