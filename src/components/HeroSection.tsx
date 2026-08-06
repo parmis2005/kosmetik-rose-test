@@ -27,7 +27,7 @@ export default function HeroSection() {
           aria-hidden="true"
           onError={() => setVideoFailed(true)}
         >
-          <source src="/videos/hero-background.mp4" type="video/mp4" />
+          <source src="/videos/hero-background-v2.mp4" type="video/mp4" />
         </video>
       )}
 
