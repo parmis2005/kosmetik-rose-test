@@ -14,10 +14,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden bg-charcoal">
       {!videoFailed && (
         <video
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover md:scale-90"
           autoPlay
           muted
           loop
