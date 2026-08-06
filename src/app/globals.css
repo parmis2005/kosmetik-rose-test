@@ -3,8 +3,11 @@
 @theme inline {
   --color-cream: #FBF6F4;
   --color-blush: #F3E3E1;
+  --color-champagne: #F1E4D0;
   --color-rose: #C2818C;
   --color-rose-dark: #8F5560;
+  --color-gold: #C9A882;
+  --color-gold-dark: #9E7B5A;
   --color-charcoal: #2B2523;
   --color-charcoal-light: #635652;
   --color-sage: #9CA98D;
@@ -35,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-divider {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, #C2818C, #8F5560);
+  background: linear-gradient(90deg, #C2818C, #C9A882);
   margin: 0 auto;
 }
 

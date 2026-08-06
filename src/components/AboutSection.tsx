@@ -13,7 +13,7 @@ export default function AboutSection() {
             />
           </div>
           <div className="absolute -bottom-6 -right-6 w-48 h-48 border border-rose/30 rounded-sm -z-10" />
-          <div className="absolute -top-6 -left-6 w-32 h-32 bg-blush rounded-sm -z-10" />
+          <div className="absolute -top-6 -left-6 w-32 h-32 bg-champagne rounded-sm -z-10" />
           <div className="absolute bottom-8 -right-4 bg-white shadow-lg px-6 py-5 text-center">
             <span className="block font-heading text-2xl font-light text-rose-dark">
               Rüya Isildak

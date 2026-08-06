@@ -25,8 +25,8 @@ export default function USPSection() {
         <div className="grid md:grid-cols-3 gap-12">
           {usps.map(({ icon: Icon, title, text }) => (
             <div key={title} className="text-center group">
-              <div className="w-16 h-16 rounded-full bg-blush flex items-center justify-center mx-auto mb-6 group-hover:bg-rose/20 transition-colors">
-                <Icon size={24} className="text-rose-dark" />
+              <div className="w-16 h-16 rounded-full bg-champagne flex items-center justify-center mx-auto mb-6 group-hover:bg-gold/20 transition-colors">
+                <Icon size={24} className="text-gold-dark" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-charcoal mb-3">
                 {title}
