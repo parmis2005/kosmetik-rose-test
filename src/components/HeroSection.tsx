@@ -57,7 +57,7 @@ export default function HeroSection() {
         </p>
 
         <h1
-          className={`font-heading text-5xl md:text-7xl font-light italic text-white leading-tight mb-6 transition-all duration-1000 delay-200 ${
+          className={`font-heading text-3xl md:text-5xl font-light italic text-white leading-tight mb-6 transition-all duration-1000 delay-200 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >

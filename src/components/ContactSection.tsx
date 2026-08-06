@@ -112,7 +112,7 @@ export default function ContactSection() {
         <div className="mt-16 aspect-[16/5] bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden">
           <iframe
             src="https://www.google.com/maps?q=Kaiserstra%C3%9Fe+75,+44135+Dortmund&output=embed"
-            className="w-full h-full grayscale opacity-60"
+            className="w-full h-full"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
