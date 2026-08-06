@@ -33,7 +33,7 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none">
+        <Link href="/" className="flex flex-col leading-none -ml-4 md:-ml-6">
           <span
             className={`font-heading text-2xl font-semibold tracking-wide transition-colors ${
               isScrolled ? "text-charcoal" : "text-white"
@@ -62,7 +62,7 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
               {link.label}
             </Link>
           ))}
-          <Link href="/#termin-buchen" className="btn-primary text-xs">
+          <Link href="/#termin-buchen" className="btn-primary text-xs -mr-4 md:-mr-6">
             Termin buchen
           </Link>
         </nav>
