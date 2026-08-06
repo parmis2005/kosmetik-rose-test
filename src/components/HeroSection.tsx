@@ -77,9 +77,8 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Apparative ästhetische Behandlungen und professionelle Elektroepilation
-          auf der Kaiserstraße – bei Fältchen, Pigmentflecken, Couperose und
-          unreiner Haut.
+          Apparative Kosmetik & Elektroepilation auf der Kaiserstraße – bei
+          Fältchen, Pigmentflecken, Couperose und unreiner Haut.
         </p>
 
         <div
