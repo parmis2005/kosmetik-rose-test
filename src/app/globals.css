@@ -42,47 +42,49 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.btn-primary {
-  display: inline-block;
-  padding: 14px 36px;
-  background: linear-gradient(135deg, #C2818C, #8F5560);
-  color: white;
-  font-family: var(--font-lato), sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
+@layer components {
+  .btn-primary {
+    display: inline-block;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #C2818C, #8F5560);
+    color: white;
+    font-family: var(--font-lato), sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
 
-.btn-primary:hover {
-  background: linear-gradient(135deg, #8F5560, #6B3E46);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 25px rgba(194, 129, 140, 0.4);
-}
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #8F5560, #6B3E46);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(194, 129, 140, 0.4);
+  }
 
-.btn-outline {
-  display: inline-block;
-  padding: 13px 35px;
-  background: transparent;
-  color: white;
-  font-family: var(--font-lato), sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.8);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
+  .btn-outline {
+    display: inline-block;
+    padding: 13px 35px;
+    background: transparent;
+    color: white;
+    font-family: var(--font-lato), sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
 
-.btn-outline:hover {
-  background: white;
-  color: #2B2523;
+  .btn-outline:hover {
+    background: white;
+    color: #2B2523;
+  }
 }
 
 .fade-in {

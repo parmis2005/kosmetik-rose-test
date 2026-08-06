@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { href: "/#termin-buchen", label: "Termin Buchen" },
   { href: "/#leistungen", label: "Leistungen" },
   { href: "/#ueber-uns", label: "Über Uns" },
   { href: "/#galerie", label: "Galerie" },
@@ -50,7 +49,7 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex flex-1 items-center justify-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -62,13 +61,17 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
               {link.label}
             </Link>
           ))}
-          <Link href="/#termin-buchen" className="btn-primary text-xs -mr-4 md:-mr-6">
-            Termin buchen
-          </Link>
         </nav>
 
+        <Link
+          href="/#termin-buchen"
+          className="hidden lg:inline-block btn-primary text-xs -mr-6"
+        >
+          Termin buchen
+        </Link>
+
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menü öffnen"
         >
@@ -81,7 +84,7 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-8 px-6">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-8 px-6">
           <nav className="flex flex-col gap-6">
             {navLinks.map((link) => (
               <Link
