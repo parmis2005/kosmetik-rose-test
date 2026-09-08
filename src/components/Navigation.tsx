@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { href: "/#leistungen", label: "Leistungen" },
   { href: "/#ueber-uns", label: "Über Uns" },
+  { href: "/#leistungen", label: "Leistungen" },
   { href: "/#galerie", label: "Galerie" },
   { href: "/#bewertungen", label: "Bewertungen" },
   { href: "/#kontakt", label: "Kontakt" },
