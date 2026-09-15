@@ -1,13 +1,15 @@
+import { siteImages } from "@/lib/siteImages";
+
 const partners = [
-  { name: "Beautiful Lips", image: "/images/produkte/beautiful-lips.jpg" },
-  { name: "Body Detox", image: "/images/produkte/body-detox.jpg" },
-  { name: "BTL-Lifting", image: "/images/produkte/btl.jpg" },
-  { name: "Cos-Medico", image: "/images/produkte/cos-medico.jpg" },
-  { name: "EpilaDerm", image: "/images/produkte/epiladerm.jpg" },
-  { name: "Purebeau", image: "/images/produkte/purebeau.jpg" },
-  { name: "TopLite", image: "/images/produkte/toplite.jpg" },
-  { name: "Verlocke", image: "/images/produkte/verlocke.jpg" },
-  { name: "Mimose Hundesalon", image: "/images/produkte/mimose.jpg" },
+  { name: "Beautiful Lips", image: siteImages.products[0] },
+  { name: "Body Detox", image: siteImages.products[1] },
+  { name: "BTL-Lifting", image: siteImages.products[2] },
+  { name: "Cos-Medico", image: siteImages.products[3] },
+  { name: "EpilaDerm", image: siteImages.products[4] },
+  { name: "Purebeau", image: siteImages.products[5] },
+  { name: "TopLite", image: siteImages.products[6] },
+  { name: "Verlocke", image: siteImages.products[7] },
+  { name: "Mimose Hundesalon", image: siteImages.products[8] },
 ];
 
 export default function ProductsSection() {
@@ -37,7 +39,7 @@ export default function ProductsSection() {
               <img
                 src={p.image}
                 alt={p.name}
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           ))}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteImages } from "@/lib/siteImages";
 
 export default function AboutSection() {
   return (
@@ -7,7 +8,7 @@ export default function AboutSection() {
         <div className="relative">
           <div className="aspect-[4/5] relative overflow-hidden rounded-sm">
             <img
-              src="/images/services/gesicht-komplett.jpg"
+              src={siteImages.about}
               alt="Gesichtsbehandlung bei Kosmetik Atelier Rosenblick"
               className="w-full h-full object-cover"
             />

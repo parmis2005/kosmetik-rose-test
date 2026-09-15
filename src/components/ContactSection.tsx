@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Clock, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 
 function FacebookIcon({ size = 15 }: { size?: number }) {
   return (
@@ -13,6 +13,9 @@ const hours = [
   { day: "Dienstag – Freitag", time: "12:00 – 18:00 Uhr" },
   { day: "Samstag", time: "9:00 – 14:00 Uhr" },
 ];
+
+const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Musterstra%C3%9Fe%2012%2C%2012345%20Musterstadt";
 
 export default function ContactSection() {
   return (
@@ -40,7 +43,7 @@ export default function ContactSection() {
               12345 Musterstadt
             </p>
             <a
-              href="https://maps.google.com/?q=Musterstra%C3%9Fe+12,+12345+Musterstadt"
+              href={mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-xs tracking-[2px] uppercase text-rose hover:text-rose/70 transition-colors border-b border-rose/40 pb-0.5"
@@ -109,17 +112,38 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="mt-16 aspect-[16/5] bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps?q=Musterstra%C3%9Fe+12,+12345+Musterstadt&output=embed"
-            className="w-full h-full"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Kosmetik Atelier Rosenblick Standort"
-          />
-        </div>
+        <a
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Kosmetik Atelier Rosenblick in Google Maps öffnen"
+          className="group mt-16 block min-h-72 overflow-hidden border border-white/10 bg-[#d8d2c8] relative"
+        >
+          <div className="absolute inset-0 opacity-80">
+            <div className="absolute -left-16 top-1/4 h-9 w-[120%] rotate-[-8deg] bg-white/65 shadow-sm" />
+            <div className="absolute -right-10 top-2/3 h-8 w-[115%] rotate-[6deg] bg-white/55 shadow-sm" />
+            <div className="absolute left-1/4 -top-12 h-[140%] w-8 rotate-[14deg] bg-white/50 shadow-sm" />
+            <div className="absolute right-1/4 -top-8 h-[130%] w-7 rotate-[-18deg] bg-white/45 shadow-sm" />
+            <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(90deg,rgba(45,35,30,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(45,35,30,0.08)_1px,transparent_1px)] bg-[size:72px_72px]" />
+          </div>
+
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-charcoal/25" />
+
+          <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center text-center">
+            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-rose text-white shadow-xl transition-transform duration-300 group-hover:scale-110">
+              <MapPin size={30} />
+            </div>
+            <div className="bg-charcoal/90 px-6 py-4 text-white shadow-lg">
+              <p className="font-heading text-xl">Kosmetik Atelier Rosenblick</p>
+              <p className="mt-1 text-sm text-white/65">Musterstraße 12 · 12345 Musterstadt</p>
+            </div>
+          </div>
+
+          <div className="absolute bottom-5 right-5 inline-flex items-center gap-2 bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[2px] text-charcoal shadow-sm transition-colors group-hover:bg-rose group-hover:text-white">
+            Google Maps öffnen
+            <ExternalLink size={14} />
+          </div>
+        </a>
       </div>
     </section>
   );

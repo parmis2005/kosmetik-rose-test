@@ -1,18 +1,19 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { siteImages } from "@/lib/siteImages";
 
 const galleries = [
   {
     href: "/galerie/frauen",
     title: "Bildergalerie Frauen",
-    image: "/images/galerie/frauen/header.jpg",
-    count: 28,
+    image: siteImages.galleryWomenHeader,
+    count: siteImages.womenGallery.length,
   },
   {
     href: "/galerie/maenner",
     title: "Bildergalerie Männer",
-    image: "/images/galerie/maenner/header.jpg",
-    count: 16,
+    image: siteImages.galleryMenHeader,
+    count: siteImages.menGallery.length,
   },
 ];
 

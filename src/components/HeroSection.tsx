@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { siteImages } from "@/lib/siteImages";
 
 export default function HeroSection() {
   const [visible, setVisible] = useState(false);
@@ -23,7 +24,7 @@ export default function HeroSection() {
           loop
           playsInline
           preload="metadata"
-          poster="/images/galerie/frauen/hero-poster.jpg"
+          poster={siteImages.heroPoster}
           aria-hidden="true"
           onError={() => setVideoFailed(true)}
         >
@@ -35,11 +36,11 @@ export default function HeroSection() {
         <>
           <div
             className="hero-moving-background absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/galerie/frauen/header.jpg')" }}
+            style={{ backgroundImage: `url('${siteImages.heroFallbackPrimary}')` }}
           />
           <div
             className="hero-moving-background hero-moving-background--delayed absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45"
-            style={{ backgroundImage: "url('/images/services/micro-needling.jpg')" }}
+            style={{ backgroundImage: `url('${siteImages.heroFallbackSecondary}')` }}
           />
         </>
       )}
@@ -61,9 +62,7 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Ihr kompetentes
-          <br />
-          <span className="font-normal not-italic">Kosmetikstudio in Musterstadt</span>
+          Ihr kompetentes Kosmetikstudio in Musterstadt
         </h1>
 
         <div

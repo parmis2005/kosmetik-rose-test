@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { siteImages } from "@/lib/siteImages";
 
 export const metadata: Metadata = {
   title: "Bildergalerie Männer – Kosmetik Atelier Rosenblick Musterstadt",
@@ -19,7 +20,10 @@ const captions: Record<number, string> = {
   9: "Micro Needling",
 };
 
-const images = Array.from({ length: 16 }, (_, i) => i + 1);
+const images = siteImages.menGallery.map((src, index) => ({
+  id: index + 1,
+  src,
+}));
 
 export default function MaennerGaleriePage() {
   return (
@@ -29,7 +33,7 @@ export default function MaennerGaleriePage() {
         <section className="relative h-[45vh] min-h-[320px] flex items-end overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/galerie/maenner/header.jpg')" }}
+            style={{ backgroundImage: `url('${siteImages.galleryMenHeader}')` }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-charcoal/60" />
           <div className="relative z-10 max-w-6xl mx-auto px-6 pb-12 w-full">
@@ -47,22 +51,22 @@ export default function MaennerGaleriePage() {
 
         <section className="bg-white py-16 px-6">
           <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {images.map((n) => (
+            {images.map((image) => (
               <a
-                key={n}
-                href={`/images/galerie/maenner/${n}.jpg`}
+                key={image.id}
+                href={image.src}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative block aspect-square overflow-hidden bg-cream"
               >
                 <img
-                  src={`/images/galerie/maenner/${n}.jpg`}
-                  alt={captions[n] ?? "Behandlung"}
+                  src={image.src}
+                  alt={captions[image.id] ?? "Behandlung"}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                  <span className="text-white text-xs">{captions[n] ?? "Behandlung"}</span>
+                  <span className="text-white text-xs">{captions[image.id] ?? "Behandlung"}</span>
                 </div>
               </a>
             ))}

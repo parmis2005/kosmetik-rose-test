@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { X, ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { siteImages } from "@/lib/siteImages";
 
 const featuredIds = ["gesichtsbehandlung", "haarentfernung", "haut-und-faltenbehandlung"];
 
@@ -26,7 +27,7 @@ const categories: ServiceCategory[] = [
     tag: "Beliebt",
     title: "Gesichtsbehandlung",
     subtitle: "Komplette Gesichtspflege",
-    image: "/images/services/gesicht-komplett.jpg",
+    image: siteImages.services.facial,
     description:
       "Gönnen Sie Ihrem Gesicht eine Auszeit vom Alltag und seinen negativen Umwelteinflüssen – mit Peeling, Maske und entspannender Massage.",
     priceGroups: [
@@ -50,7 +51,7 @@ const categories: ServiceCategory[] = [
     tag: "Klassiker",
     title: "Elektrolyse & Haarentfernung",
     subtitle: "Dauerhafte Haarreduktion",
-    image: "/images/services/nadelepilation.jpg",
+    image: siteImages.services.hairRemoval,
     description:
       "Für eine dauerhafte Haarentfernung bzw. Haarwuchsreduktion bieten wir IPL, EpilaDerm-Zuckerpaste, Elektro-/Nadelepilation und klassisches Wachsen an.",
     priceGroups: [
@@ -98,7 +99,7 @@ const categories: ServiceCategory[] = [
     tag: "Pflege",
     title: "Hand & Fuß",
     subtitle: "Kosmetische & medizinische Fußpflege",
-    image: "/images/services/hand-fuss.jpg",
+    image: siteImages.services.handFoot,
     description:
       "Body Detox Elektrolyse Hand- und Fußbad, Nagelmodelage, Nagelauffüllung, Paraffinbad, Maniküre und Pediküre.",
     priceGroups: [{ rows: [{ label: "Hand- und/oder Fußpflege", price: "ab 10 €" }] }],
@@ -108,7 +109,7 @@ const categories: ServiceCategory[] = [
     tag: "Anti-Aging",
     title: "Bio-Lifting",
     subtitle: "Ultraschall-Liposuktion & BTL Biolifting",
-    image: "/images/services/ultraschall.jpg",
+    image: siteImages.services.bioLifting,
     description:
       "Sofortige Effekte mit Langzeitwirkung: Körpermodellierung und Straffung von Problemzonen – als schonende Alternative ohne Nebenwirkungen. BTL Biolifting eignet sich besonders für empfindliche, allergieanfällige Haut.",
     priceGroups: [
@@ -136,7 +137,7 @@ const categories: ServiceCategory[] = [
     tag: "Anti-Aging",
     title: "Haut- & Faltenbehandlung",
     subtitle: "Gegen Falten, Pigmentflecken & Couperose",
-    image: "/images/services/oxyjet.jpg",
+    image: siteImages.services.skinTreatment,
     description:
       "Moderne, apparative Verfahren gegen Fältchen, Altersflecken, Couperose, unreine Haut und Narben – von Sauerstofftherapie über Mikrodermabrasion bis Micro Needling.",
     priceGroups: [
@@ -157,7 +158,7 @@ const categories: ServiceCategory[] = [
     tag: "PMU",
     title: "Permanent Make-up",
     subtitle: "Permanent Make-up & Microblading",
-    image: "/images/services/permanent-make-up.jpg",
+    image: siteImages.services.permanentMakeup,
     description:
       "Dauerhaftes Make-up für Augenbrauen, Lidstrich und Lippen. Beim Microblading werden Farbpigmente mit einem feinen Klingenstift statt einer Maschine in die Haut eingearbeitet.",
     priceGroups: [
@@ -177,7 +178,7 @@ const categories: ServiceCategory[] = [
     tag: "Entfernung",
     title: "PigmentOff Remover",
     subtitle: "Laserfreie Pigmententfernung",
-    image: "/images/services/permanent-makeup-sw.jpg",
+    image: siteImages.services.pigmentRemoval,
     description:
       "Laserfreie Entfernung von Permanent Make-up und Tattoo-Pigmenten – für alle Farben und Pigmentarten, inklusive acrylbasierter Microblading-Pigmente. Vollständige Entfernung ist meist über mehrere Behandlungen möglich.",
     priceGroups: [],
@@ -188,7 +189,7 @@ const categories: ServiceCategory[] = [
     tag: "Lippen",
     title: "Lippenbehandlung",
     subtitle: "Beautiful Lips & Juvéderm® ULTRA",
-    image: "/images/services/beautiful-lips.jpg",
+    image: siteImages.services.lips,
     description:
       "Die sanfte 'Beautiful Lips'-Behandlung lässt Lippen voller wirken und die Kontur deutlicher hervortreten. Juvéderm® ULTRA ist ein biologisch abbaubares Hyaluronsäure-Gel gegen feine Linien und für mehr Lippenvolumen.",
     priceGroups: [

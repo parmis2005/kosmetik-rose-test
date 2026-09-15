@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { siteImages } from "@/lib/siteImages";
 
 export default function CTABanner() {
   return (
     <section id="termin" className="relative py-24 px-6 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/services/plasma-pen.jpg')" }}
+        style={{ backgroundImage: `url('${siteImages.cta}')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/70 to-charcoal/50" />
 
