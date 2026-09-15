@@ -1,18 +1,5 @@
 import { siteImages } from "@/lib/siteImages";
 
-const partners = [
-  { name: "Beautiful Lips", image: siteImages.products[0] },
-  { name: "Body Detox", image: siteImages.products[1] },
-  { name: "BTL-Lifting", image: siteImages.products[2] },
-  { name: "Cos-Medico", image: siteImages.products[3] },
-  { name: "EpilaDerm", image: siteImages.products[4] },
-  { name: "Purebeau", image: siteImages.products[5] },
-  { name: "TopLite", image: siteImages.products[6] },
-  { name: "Verlocke", image: siteImages.products[7] },
-  { name: "Mimose Hundesalon", image: siteImages.products[8] },
-  { name: "Dermalogica", image: siteImages.products[9] },
-];
-
 export default function ProductsSection() {
   return (
     <section id="produkte" className="bg-blush/40 py-24 px-6">
@@ -31,18 +18,30 @@ export default function ProductsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-          {partners.map((p) => (
-            <div
-              key={p.name}
-              className="bg-white p-4 flex items-center justify-center aspect-square shadow-sm hover:shadow-md transition-shadow"
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {siteImages.productVideos.map((video) => (
+            <figure
+              key={video.title}
+              className="group bg-white p-3 shadow-sm transition-shadow hover:shadow-md"
             >
-              <img
-                src={p.image}
-                alt={p.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+              <div className="relative aspect-[4/5] overflow-hidden bg-cream">
+                <video
+                  src={video.src}
+                  poster={video.poster}
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label={video.title}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/45 via-transparent to-transparent opacity-80" />
+                <figcaption className="absolute bottom-4 left-4 right-4 font-heading text-lg text-white">
+                  {video.title}
+                </figcaption>
+              </div>
+            </figure>
           ))}
         </div>
       </div>

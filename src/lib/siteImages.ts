@@ -33,6 +33,28 @@ export const siteImages = {
     unsplash("photo-1604654894610-df63bc536371", 700, 700),
     unsplash("photo-1571875257727-256c39da42af", 700, 700),
   ],
+  productVideos: [
+    {
+      title: "Pflegeprodukte",
+      src: "https://videos.pexels.com/video-files/7316102/7316102-sd_360_640_25fps.mp4",
+      poster: "https://images.pexels.com/videos/7316102/pexels-photo-7316102.jpeg?cs=tinysrgb&dpr=1&w=600",
+    },
+    {
+      title: "Technologiepartner",
+      src: "https://videos.pexels.com/video-files/7754395/7754395-sd_360_640_30fps.mp4",
+      poster: "https://images.pexels.com/videos/7754395/pexels-photo-7754395.jpeg?cs=tinysrgb&dpr=1&w=600",
+    },
+    {
+      title: "Make-up Sortiment",
+      src: "https://videos.pexels.com/video-files/7291145/7291145-sd_640_360_25fps.mp4",
+      poster: "https://images.pexels.com/videos/7291145/pexels-photo-7291145.jpeg?cs=tinysrgb&dpr=1&w=600",
+    },
+    {
+      title: "Kosmetikpflege",
+      src: "https://videos.pexels.com/video-files/7317019/7317019-sd_360_640_25fps.mp4",
+      poster: "https://images.pexels.com/videos/7317019/architecture-art-blur-business-7317019.jpeg?cs=tinysrgb&dpr=1&w=600",
+    },
+  ],
   womenGallery: [
     "photo-1570172619644-dfd03ed5d881",
     "photo-1515377905703-c4788e51af15",

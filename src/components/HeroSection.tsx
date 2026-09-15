@@ -61,7 +61,7 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Ihr kompetentes Kosmetikstudio in Musterstadt
+          Ihr Kosmetikstudio für apparative Schönheitspflege
         </h1>
 
         <div
