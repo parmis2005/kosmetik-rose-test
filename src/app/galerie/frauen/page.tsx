@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Bildergalerie Frauen – Kosmetik Rose Dortmund",
+  title: "Bildergalerie Frauen – Kosmetik Atelier Rosenblick Musterstadt",
   description:
     "Vorher-Nachher Bilder unserer Behandlungen für Frauen: Gesichtsbehandlung, Permanent Make-up, Micro Needling, Haarentfernung und mehr.",
 };

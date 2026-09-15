@@ -18,21 +18,21 @@ export default function CTABanner() {
         </h2>
         <p className="text-white/80 text-base leading-relaxed mb-10 max-w-lg mx-auto">
           Gönnen Sie Ihrer Haut die Behandlung, die sie verdient. Buchen Sie
-          jetzt Ihren persönlichen Termin bei Kosmetik Rose auf der
-          Kaiserstraße in Dortmund.
+          jetzt Ihren persönlichen Termin bei Kosmetik Atelier Rosenblick auf der
+          Musterstraße in Musterstadt.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/#termin-buchen" className="btn-primary">
             Jetzt online buchen
           </Link>
-          <a href="mailto:info@kosmetik-rose.de" className="btn-outline">
+          <a href="mailto:kontakt@rosenblick.example" className="btn-outline">
             Termin per E-Mail anfragen
           </a>
         </div>
 
         <p className="text-white/50 text-xs mt-8 tracking-wide">
-          Tel: 0231-138 78 00 · Mobil: 01525-1 34 12 12 · info@kosmetik-rose.de
+          Tel: 0000 000 000 · Mobil: 0000 000 001 · kontakt@rosenblick.example
         </p>
       </div>
     </section>

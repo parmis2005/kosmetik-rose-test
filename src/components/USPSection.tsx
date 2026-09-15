@@ -14,7 +14,7 @@ const usps = [
   {
     icon: Users,
     title: "Persönlich & individuell",
-    text: "Inhaberin Rüya Isildak und ihr Team nehmen sich Zeit für eine Behandlung, die genau auf Ihre Haut abgestimmt ist.",
+    text: "Inhaberin Mira Beispiel und ihr Team nehmen sich Zeit für eine Behandlung, die genau auf Ihre Haut abgestimmt ist.",
   },
 ];
 

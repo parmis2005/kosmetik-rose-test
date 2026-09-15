@@ -3,8 +3,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Datenschutz – Kosmetik Rose Dortmund",
-  description: "Datenschutzerklärung von Kosmetik Rose, Dortmund.",
+  title: "Datenschutz – Kosmetik Atelier Rosenblick Musterstadt",
+  description: "Datenschutzerklärung von Kosmetik Atelier Rosenblick, Musterstadt.",
 };
 
 export default function DatenschutzPage() {
@@ -42,13 +42,13 @@ export default function DatenschutzPage() {
                 ist:
               </p>
               <p className="mb-3">
-                Rüya Isildak
+                Mira Beispiel
                 <br />
-                Kaiserstraße 75
+                Musterstraße 12
                 <br />
-                44135 Dortmund
+                12345 Musterstadt
                 <br />
-                E-Mail: info@kosmetik-rose.de
+                E-Mail: kontakt@rosenblick.example
               </p>
               <p className="mb-3">
                 Sie haben jederzeit das Recht, erteilte Einwilligungen zu

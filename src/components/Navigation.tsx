@@ -38,14 +38,14 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
               isScrolled ? "text-charcoal" : "text-white"
             }`}
           >
-            Kosmetik Rose
+            Kosmetik Atelier Rosenblick
           </span>
           <span
             className={`text-xs tracking-[3px] uppercase mt-0.5 transition-colors ${
               isScrolled ? "text-rose" : "text-rose/90"
             }`}
           >
-            Dortmund · Kaiserstraße
+            Musterstadt · Musterstraße
           </span>
         </Link>
 
@@ -105,8 +105,8 @@ export default function Navigation({ solid = false }: { solid?: boolean }) {
             </Link>
             <div className="flex items-center gap-2 text-charcoal-light pt-2 border-t border-gray-100">
               <Phone size={14} className="text-rose" />
-              <a href="tel:+492311387800" className="text-sm hover:text-rose transition-colors">
-                0231-138 78 00
+              <a href="tel:+490000000000" className="text-sm hover:text-rose transition-colors">
+                0000 000 000
               </a>
             </div>
           </nav>

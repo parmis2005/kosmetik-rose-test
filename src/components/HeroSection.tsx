@@ -53,7 +53,7 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Willkommen bei Kosmetik Rose
+          Willkommen bei Kosmetik Atelier Rosenblick
         </p>
 
         <h1
@@ -63,7 +63,7 @@ export default function HeroSection() {
         >
           Ihr kompetentes
           <br />
-          <span className="font-normal not-italic">Kosmetikstudio in Dortmund</span>
+          <span className="font-normal not-italic">Kosmetikstudio in Musterstadt</span>
         </h1>
 
         <div
@@ -77,7 +77,7 @@ export default function HeroSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Apparative Kosmetik & Elektroepilation auf der Kaiserstraße – bei
+          Apparative Kosmetik & Elektroepilation auf der Musterstraße – bei
           Fältchen, Pigmentflecken, Couperose und unreiner Haut.
         </p>
 

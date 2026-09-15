@@ -3,8 +3,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Impressum – Kosmetik Rose Dortmund",
-  description: "Impressum von Kosmetik Rose, Kaiserstraße 75, 44135 Dortmund.",
+  title: "Impressum – Kosmetik Atelier Rosenblick Musterstadt",
+  description: "Impressum von Kosmetik Atelier Rosenblick, Musterstraße 12, 12345 Musterstadt.",
 };
 
 export default function ImpressumPage() {
@@ -25,24 +25,24 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 DDG
               </h2>
               <p>
-                Schönheitssalon Rose
+                Kosmetik Atelier Rosenblick
                 <br />
-                Inh. Rüya Isildak
+                Inh. Mira Beispiel
                 <br />
-                Kaiserstraße 75
+                Musterstraße 12
                 <br />
-                44135 Dortmund
+                12345 Musterstadt
               </p>
             </div>
 
             <div>
               <h2 className="font-heading text-xl text-charcoal mb-3">Kontakt</h2>
               <p>
-                Telefon: 0231-1 38 78 00
+                Telefon: 0000 000 000
                 <br />
-                Mobil: 01525-1 34 12 12
+                Mobil: 0000 000 001
                 <br />
-                E-Mail: info@kosmetik-rose.de
+                E-Mail: kontakt@rosenblick.example
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function ImpressumPage() {
               <h2 className="font-heading text-xl text-charcoal mb-3">
                 Umsatzsteuer
               </h2>
-              <p>Steuernummer: 317/5085/8923</p>
+              <p>Steuernummer: 000/0000/0000</p>
             </div>
 
             <div>
@@ -58,11 +58,11 @@ export default function ImpressumPage() {
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
               </h2>
               <p>
-                Rüya Isildak
+                Mira Beispiel
                 <br />
-                Kaiserstraße 75
+                Musterstraße 12
                 <br />
-                44135 Dortmund
+                12345 Musterstadt
               </p>
             </div>
 

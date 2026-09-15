@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Bildergalerie Männer – Kosmetik Rose Dortmund",
+  title: "Bildergalerie Männer – Kosmetik Atelier Rosenblick Musterstadt",
   description:
     "Vorher-Nachher Bilder unserer Behandlungen für Männer: Plasma Pen, Gesichtsbehandlung, Mikrodermabrasion, Micro Needling und mehr.",
 };

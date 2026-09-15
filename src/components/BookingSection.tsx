@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
 import { CalendarDays, Clock, Mail, MessageSquare, Phone, User } from "lucide-react";
 
 const services = [
@@ -101,12 +101,6 @@ export default function BookingSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const timeSlots = useMemo(() => buildTimeSlots(selectedDay?.date), [selectedDay]);
-
-  useEffect(() => {
-    if (selectedTime && !timeSlots.includes(selectedTime)) {
-      setSelectedTime(null);
-    }
-  }, [timeSlots, selectedTime]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -227,7 +221,10 @@ export default function BookingSection() {
                 key={day.iso}
                 type="button"
                 disabled={day.closed}
-                onClick={() => setSelectedDay(day)}
+                onClick={() => {
+                  setSelectedDay(day);
+                  setSelectedTime(null);
+                }}
                 className={`shrink-0 w-16 py-3 text-center border transition-colors ${
                   day.closed
                     ? "border-rose/10 text-charcoal-light/40 cursor-not-allowed"

@@ -2,24 +2,24 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Birgit",
+    name: "Kundin A.",
     rating: 5,
-    text: "Tolle, glatte Haut - danke!",
+    text: "Tolle, glatte Haut - danke für die angenehme Behandlung!",
   },
   {
-    name: "Thomas",
+    name: "Kunde B.",
     rating: 5,
-    text: "Meine Frau hat mir Schönheitssalon Rose empfohlen, da auch ich mal meine Haut pflegen sollte. Etwas ungewohnt für mich, aber im Endeffekt schon super.",
+    text: "Meine Frau hat mir Kosmetik Atelier Rosenblick empfohlen, da auch ich mal meine Haut pflegen sollte. Etwas ungewohnt für mich, aber im Endeffekt schon super.",
   },
   {
-    name: "Marie",
+    name: "Kundin C.",
     rating: 5,
-    text: "Liebe Suzan, danke für die entspannende und reinigende Gesichtsbehandlung!",
+    text: "Danke für die entspannende und reinigende Gesichtsbehandlung!",
   },
   {
-    name: "Anonym",
+    name: "Kundin D.",
     rating: 5,
-    text: "Suzan gibt sich große Mühe bei allen Behandlungen.",
+    text: "Das Team gibt sich große Mühe bei allen Behandlungen.",
   },
 ];
 
@@ -50,10 +50,10 @@ export default function ReviewsSection() {
           </h2>
           <div className="flex items-center justify-center gap-3 mb-2">
             <Stars rating={5} />
-            <span className="text-charcoal font-semibold text-sm">4,1 / 5</span>
+            <span className="text-charcoal font-semibold text-sm">5,0 / 5</span>
           </div>
           <p className="text-charcoal-light text-xs">
-            Basierend auf Kundenbewertungen auf Treatwell
+            Fiktive Beispielbewertungen
           </p>
         </div>
 

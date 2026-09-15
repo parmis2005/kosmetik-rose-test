@@ -35,12 +35,12 @@ export default function ContactSection() {
               <h3 className="font-heading text-lg text-white">Adresse</h3>
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              Kaiserstraße 75
+              Musterstraße 12
               <br />
-              44135 Dortmund
+              12345 Musterstadt
             </p>
             <a
-              href="https://maps.google.com/?q=Kaiserstra%C3%9Fe+75,+44135+Dortmund"
+              href="https://maps.google.com/?q=Musterstra%C3%9Fe+12,+12345+Musterstadt"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-xs tracking-[2px] uppercase text-rose hover:text-rose/70 transition-colors border-b border-rose/40 pb-0.5"
@@ -57,27 +57,27 @@ export default function ContactSection() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone size={14} className="text-rose/60" />
-                <a href="tel:+492311387800" className="text-white/60 text-sm hover:text-white transition-colors">
-                  0231-138 78 00
+                <a href="tel:+490000000000" className="text-white/60 text-sm hover:text-white transition-colors">
+                  0000 000 000
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={14} className="text-rose/60" />
-                <a href="tel:+4915251341212" className="text-white/60 text-sm hover:text-white transition-colors">
-                  01525-1 34 12 12
+                <a href="tel:+490000000001" className="text-white/60 text-sm hover:text-white transition-colors">
+                  0000 000 001
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={14} className="text-rose/60" />
-                <a href="mailto:info@kosmetik-rose.de" className="text-white/60 text-sm hover:text-white transition-colors">
-                  info@kosmetik-rose.de
+                <a href="mailto:kontakt@rosenblick.example" className="text-white/60 text-sm hover:text-white transition-colors">
+                  kontakt@rosenblick.example
                 </a>
               </div>
             </div>
 
             <div className="flex gap-4 mt-6">
               <a
-                href="https://www.facebook.com/Sch%C3%B6nheitssalon-ROSE-192643807419405/"
+                href="https://example.com/social"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 border border-white/20 flex items-center justify-center text-white/50 hover:border-rose hover:text-rose transition-colors"
@@ -111,13 +111,13 @@ export default function ContactSection() {
 
         <div className="mt-16 aspect-[16/5] bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden">
           <iframe
-            src="https://www.google.com/maps?q=Kaiserstra%C3%9Fe+75,+44135+Dortmund&output=embed"
+            src="https://www.google.com/maps?q=Musterstra%C3%9Fe+12,+12345+Musterstadt&output=embed"
             className="w-full h-full"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Kosmetik Rose Standort"
+            title="Kosmetik Atelier Rosenblick Standort"
           />
         </div>
       </div>

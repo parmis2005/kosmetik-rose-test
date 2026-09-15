@@ -1,8 +1,8 @@
-# Kosmetik Rose – Website
+# Kosmetik Atelier Rosenblick – Website
 
 Next.js-Website für den Schönheitssalon und das Elektroepilationsstudio
-Kosmetik Rose (Kaiserstraße 75, 44135 Dortmund), inhaltlich orientiert an
-[kosmetik-rose.de](https://www.kosmetik-rose.de/).
+Kosmetik Atelier Rosenblick (Musterstraße 12, 12345 Musterstadt) mit
+vollständig fiktiven Kontaktdaten.
 
 ## Entwicklung
 

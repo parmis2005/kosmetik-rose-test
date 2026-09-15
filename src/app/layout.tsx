@@ -16,11 +16,11 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Kosmetik Rose – Schönheitssalon & Elektroepilationsstudio Dortmund",
+  title: "Kosmetik Atelier Rosenblick – Schönheitssalon & Elektroepilationsstudio Musterstadt",
   description:
-    "Kosmetik Rose auf der Kaiserstraße in Dortmund: Ihr kompetentes Kosmetikstudio für Gesichtsbehandlungen, dauerhafte Haarentfernung, Permanent Make-up, Bio-Lifting und mehr. Termine bei Inhaberin Rüya Isildak.",
+    "Kosmetik Atelier Rosenblick auf der Musterstraße in Musterstadt: Ihr fiktives Kosmetikstudio für Gesichtsbehandlungen, dauerhafte Haarentfernung, Permanent Make-up, Bio-Lifting und mehr. Termine bei Inhaberin Mira Beispiel.",
   keywords:
-    "Kosmetikstudio Dortmund, Kosmetik Rose, Elektroepilation, Haarentfernung Dortmund, Permanent Make Up Dortmund, Gesichtsbehandlung Kaiserstraße",
+    "Kosmetikstudio Musterstadt, Kosmetik Atelier Rosenblick, Elektroepilation, Haarentfernung Musterstadt, Permanent Make Up Musterstadt, Gesichtsbehandlung Musterstraße",
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ export default function AboutSection() {
           <div className="aspect-[4/5] relative overflow-hidden rounded-sm">
             <img
               src="/images/services/gesicht-komplett.jpg"
-              alt="Gesichtsbehandlung bei Kosmetik Rose"
+              alt="Gesichtsbehandlung bei Kosmetik Atelier Rosenblick"
               className="w-full h-full object-cover"
             />
           </div>
@@ -16,7 +16,7 @@ export default function AboutSection() {
           <div className="absolute -top-6 -left-6 w-32 h-32 bg-champagne rounded-sm -z-10" />
           <div className="absolute bottom-8 -right-4 bg-white shadow-lg px-6 py-5 text-center">
             <span className="block font-heading text-2xl font-light text-rose-dark">
-              Rüya Isildak
+              Mira Beispiel
             </span>
             <span className="block text-xs tracking-[2px] uppercase text-charcoal-light mt-1">
               Inhaberin
@@ -35,15 +35,15 @@ export default function AboutSection() {
           <div className="section-divider mb-8 ml-0" />
 
           <p className="text-charcoal-light leading-relaxed mb-6">
-            Willkommen im Schönheitssalon und Elektroepilationsstudio Kosmetik Rose
-            auf der Kaiserstraße in Dortmund. Als spezialisiertes Kosmetikstudio
+            Willkommen im Schönheitssalon und Elektroepilationsstudio Kosmetik Atelier Rosenblick
+            auf der Musterstraße in Musterstadt. Als spezialisiertes Kosmetikstudio
             für moderne Hautpflege und Naturkosmetik bieten wir Ihnen apparative
             ästhetische Behandlungen sowie professionelle Elektroepilation und
             Nadelepilation.
           </p>
           <p className="text-charcoal-light leading-relaxed mb-10">
             Ob Fältchen, Altersflecken, Couperose, unreine Haut oder Narben –
-            Inhaberin Rüya Isildak und ihr Team beraten Sie individuell und
+            Inhaberin Mira Beispiel und ihr Team beraten Sie individuell und
             finden die passende Behandlung für Ihr Hautbild, ganz ohne
             Lasertechnologie.
           </p>
