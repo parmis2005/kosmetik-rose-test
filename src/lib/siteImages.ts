@@ -31,6 +31,7 @@ export const siteImages = {
     unsplash("photo-1598440947619-2c35fc9aa908", 700, 700),
     unsplash("photo-1522338242992-e1a54906a8da", 700, 700),
     unsplash("photo-1604654894610-df63bc536371", 700, 700),
+    unsplash("photo-1571875257727-256c39da42af", 700, 700),
   ],
   womenGallery: [
     "photo-1570172619644-dfd03ed5d881",

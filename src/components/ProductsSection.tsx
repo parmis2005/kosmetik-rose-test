@@ -10,6 +10,7 @@ const partners = [
   { name: "TopLite", image: siteImages.products[6] },
   { name: "Verlocke", image: siteImages.products[7] },
   { name: "Mimose Hundesalon", image: siteImages.products[8] },
+  { name: "Dermalogica", image: siteImages.products[9] },
 ];
 
 export default function ProductsSection() {

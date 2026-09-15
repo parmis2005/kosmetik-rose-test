@@ -23,8 +23,7 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          preload="metadata"
-          poster={siteImages.heroPoster}
+          preload="auto"
           aria-hidden="true"
           onError={() => setVideoFailed(true)}
         >
